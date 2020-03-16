@@ -23,6 +23,8 @@ attr_accessor :name,:player,:coach
 # def set_team_coach(name)
 #   @coach = name
 # end
-
+ def add_player(name)
+   @player.push(name)
+ end
 
 end
