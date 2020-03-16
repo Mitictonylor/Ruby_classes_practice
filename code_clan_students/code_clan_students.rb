@@ -20,4 +20,7 @@ def set_cohort(name)
   @cohort = name
 end
 
+def talk()
+  return "I can talk"
+end
 end
