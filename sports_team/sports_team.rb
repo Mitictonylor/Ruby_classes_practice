@@ -6,7 +6,7 @@ attr_accessor :name,:players,:coach
     @name = name
     @players = players
     @coach = coach
-    points = 0 
+@points = 0
   end
 
 # def name()
@@ -33,6 +33,10 @@ attr_accessor :name,:players,:coach
      true if player == name
    end
  end
+
+def update_points(win_or_lost)
+@points += 3 if win_or_lost.downcase == "win"
+end
 
 
 end

@@ -40,6 +40,9 @@ def test_find_player_false()
   assert_equal(result,@sport_team.find_team_player("cavani"))
 end
 
+def test_update_points()
+  assert_equal(3,@sport_team.update_points("win") )
+end
 
 
 end
