@@ -17,6 +17,7 @@ class Library
       end
     end
   end
+
   def get_book_title_gives_rental_details(name)
     for book in @books
       if book[:title] == name
@@ -25,6 +26,9 @@ class Library
     end
   end
 
+def add_book(name)
+  @books.push(name)
+end
 
 
 end
