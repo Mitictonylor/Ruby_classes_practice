@@ -13,7 +13,7 @@ def test_get_team_name()
 end
 
 def test_get_team_players()
-  assert_equal(["Gigio Donnarumma","Alessio Romagnoli","Davide Calabria"],@sport_team.player())
+  assert_equal(["Gigio Donnarumma","Alessio Romagnoli","Davide Calabria"],@sport_team.players())
 end
 
 def test_get_team_coach()
@@ -26,7 +26,20 @@ def test_set_team_coach()
 end
 
 def test_add_player()
-  @sport_team.player.push("Theo Hernandez")
-  assert_equal(["Gigio Donnarumma","Alessio Romagnoli","Davide Calabria", "Theo Hernandez"], @sport_team.player)
+  @sport_team.players.push("Theo Hernandez")
+  assert_equal(["Gigio Donnarumma","Alessio Romagnoli","Davide Calabria", "Theo Hernandez"], @sport_team.players)
 end
+
+def test_find_player_true()
+result =   @sport_team.find_team_player("Gigio Donnarumma")
+  assert_equal(result, @sport_team.find_team_player("Gigio Donnarumma"))
+end
+
+def test_find_player_false()
+  result = @sport_team.find_team_player("cavani")
+  assert_equal(result,@sport_team.find_team_player("cavani"))
+end
+
+
+
 end

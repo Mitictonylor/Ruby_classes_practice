@@ -1,11 +1,12 @@
 class SportTeam
 
-attr_accessor :name,:player,:coach
+attr_accessor :name,:players,:coach
 
   def initialize(name,players,coach)
     @name = name
-    @player = players
+    @players = players
     @coach = coach
+    points = 0 
   end
 
 # def name()
@@ -24,7 +25,14 @@ attr_accessor :name,:player,:coach
 #   @coach = name
 # end
  def add_player(name)
-   @player.push(name)
+   @players.push(name)
  end
+
+ def find_team_player(name)
+   for player in @players
+     true if player == name
+   end
+ end
+
 
 end
