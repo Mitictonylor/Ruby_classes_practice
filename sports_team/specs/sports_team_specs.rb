@@ -20,7 +20,10 @@ def test_get_team_coach()
   assert_equal("Stefano Pioli", @sport_team.get_team_coach())
 end
 
-
+def test_set_team_coach()
+  @sport_team.set_team_coach("Max Allegri")
+  assert_equal("Max Allegri",@sport_team.get_team_coach())
+end
 
 
 end

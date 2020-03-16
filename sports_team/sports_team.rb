@@ -17,5 +17,9 @@ def get_team_coach()
   return @coach
 end
 
+def set_team_coach(name)
+  @coach = name
+end
+
 
 end
