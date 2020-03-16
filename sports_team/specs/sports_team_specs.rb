@@ -9,20 +9,20 @@ class TestSportTeam < Minitest::Test
   end
 
 def test_get_team_name()
-  assert_equal("Milan", @sport_team.get_team_name())
+  assert_equal("Milan", @sport_team.name())
 end
 
 def test_get_team_players()
-  assert_equal(["Gigio Donnarumma","Alessio Romagnoli","Davide Calabria"],@sport_team.get_team_players())
+  assert_equal(["Gigio Donnarumma","Alessio Romagnoli","Davide Calabria"],@sport_team.player())
 end
 
 def test_get_team_coach()
-  assert_equal("Stefano Pioli", @sport_team.get_team_coach())
+  assert_equal("Stefano Pioli", @sport_team.coach())
 end
 
 def test_set_team_coach()
-  @sport_team.set_team_coach("Max Allegri")
-  assert_equal("Max Allegri",@sport_team.get_team_coach())
+  @sport_team.coach ="Max Allegri"
+  assert_equal("Max Allegri",@sport_team.coach())
 end
 
 
