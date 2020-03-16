@@ -58,5 +58,10 @@ def test_add_book()
 
 end
 
-
+def test_change_rental_detail()
+  assert_equal([{
+  title: "lord of the rings",
+  rental_details: {student_name: "Jim",due_date: "01/02/20"}
+                  }],@library.change_rental_details("lord of the rings","Jim","01/02/20"))
+end
 end

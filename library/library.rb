@@ -30,5 +30,15 @@ def add_book(name)
   @books.push(name)
 end
 
+def change_rental_details(book_name,student_name,due_date)
+  for book in @books
+    if book[:title] == book_name
+  book[:rental_details][:student_name] = student_name
+  book[:rental_details][:due_date] = due_date
+    end
+  end
+end
+
+
 
 end
