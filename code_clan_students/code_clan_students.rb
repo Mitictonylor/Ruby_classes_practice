@@ -7,6 +7,8 @@ end
 def get_name()
   return @name
 end
-def
+def get_cohort()
+  return @cohort
+end
 
 end
