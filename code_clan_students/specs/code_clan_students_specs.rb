@@ -23,4 +23,8 @@ def test_set_student_name()
   assert_equal("Gino", @student.get_name)
 end
 
+def test_set_student_cohort()
+  @student.set_cohort("G19")
+  assert_equal("G19", @student.get_cohort)
+end
 end
