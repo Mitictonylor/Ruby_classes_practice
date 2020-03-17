@@ -26,7 +26,7 @@ def test_set_team_coach()
 end
 
 def test_add_player()
-  @sport_team.players.push("Theo Hernandez")
+  @sport_team.add_player("Theo Hernandez")
   assert_equal(["Gigio Donnarumma","Alessio Romagnoli","Davide Calabria", "Theo Hernandez"], @sport_team.players)
 end
 

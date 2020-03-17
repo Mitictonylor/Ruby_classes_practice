@@ -17,8 +17,14 @@ class TestStudent < Minitest::Test
   def test_student_cohort()
     assert_equal("G18", @student.get_cohort())
   end
-
+#The one where we can update a studens name
   def test_set_student_name()
+    #GIVEN i have a student with the name "David"
+    #student_david= Student.new("David", "G40")
+    #WHEN i set the students name to "David E"
+    #student_david.set_name("David E")
+    #THEN the name should be "David E"
+    #assert_equal("David E", student_david.get_name())
     @student.set_name("Gino")
     assert_equal("Gino", @student.get_name())
   end
