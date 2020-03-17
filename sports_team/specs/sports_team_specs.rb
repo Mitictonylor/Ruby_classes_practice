@@ -32,12 +32,12 @@ end
 
 def test_find_player_true()
 result =   @sport_team.find_team_player("Gigio Donnarumma")
-  assert_equal(result, @sport_team.find_team_player("Gigio Donnarumma"))
+  assert_equal(true, result)
 end
 
 def test_find_player_false()
   result = @sport_team.find_team_player("cavani")
-  assert_equal(result,@sport_team.find_team_player("cavani"))
+  assert_equal(false,result)
 end
 
 def test_update_points()

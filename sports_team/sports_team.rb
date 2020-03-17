@@ -6,7 +6,7 @@ attr_accessor :name,:players,:coach
     @name = name
     @players = players
     @coach = coach
-@points = 0
+    @points = 0
   end
 
 # def name()
@@ -29,9 +29,18 @@ attr_accessor :name,:players,:coach
  end
 
  def find_team_player(name)
+   #return @players.include?(name)
    for player in @players
-     true if player == name
+     return true if player == name
+     # if player == name
+     #   return true
+     # else
+     #   return false
+     # end
    end
+
+   return false
+
  end
 
 def update_points(win_or_lost)
